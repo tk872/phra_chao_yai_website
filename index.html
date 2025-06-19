@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html lang="lo">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ຊື່ໜ້າ - ພຣະເຈົ້າໃຫຍ່ອົງຫຼວງຜາສຸຂ</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>ພຣະເຈົ້າໃຫຍ່ອົງຫຼວງຜາສຸຂ</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">ໜ້າຫຼັກ</a></li>
-                    <li><a href="history.html">ປະຫວັດ</a></li>
-                    <li><a href="journey.html">ການເດີນທາງ</a></li>
-                    <li><a href="wat_pha_o.html">ວັດຜາໂອ</a></li>
-                    <li><a href="game.html">ເກມ</a></li>
-                    <li><a href="contact.html">ຕິດຕໍ່</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<main class="container content-area">
+    <h2>ຕິດຕໍ່ພວກເຮົາ</h2>
+    <p>ຖ້າທ່ານມີຄໍາຖາມ, ຄໍາຄິດເຫັນ, ຫຼື ຕ້ອງການຂໍ້ມູນເພີ່ມເຕີມ, ກະລຸນາຕິດຕໍ່ພວກເຮົາ.</p>
+    <form action="#" method="POST" class="contact-form">
+        <label for="name">ຊື່:</label>
+        <input type="text" id="name" name="name" required>
 
-    <main class="container">
-        <h2>ຫົວຂໍ້ຂອງໜ້ານີ້</h2>
-        <p>ນີ້ຄືເນື້ອຫາຂອງໜ້ານັ້ນໆ...</p>
-    </main>
+        <label for="email">ອີເມວ:</label>
+        <input type="email" id="email" name="email" required>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 ພຣະເຈົ້າໃຫຍ່ອົງຫຼວງຜາສຸຂ. ສະຫງວນລິຂະສິດ.</p>
-        </div>
-    </footer>
+        <label for="subject">ຫົວຂໍ້:</label>
+        <input type="text" id="subject" name="subject">
 
-    <script src="js/script.js"></script>
-</body>
-</html>
+        <label for="message">ຂໍ້ຄວາມ:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="button">ສົ່ງຂໍ້ຄວາມ</button>
+    </form>
+</main>
