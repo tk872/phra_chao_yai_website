@@ -7,12 +7,12 @@
 
 body {
     font-family: 'Noto Sans Lao', sans-serif;
-    background-color: #f0f2f5; /* Light grey background */
+    background-color: #f0f2f5; /* ສີເທົາອ່ອນ */
     color: #333;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* ໃຫ້ໜ້າເວັບເຕັມຈໍ */
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 }
 
 a {
-    color: #4CAF50; /* Green link color */
+    color: #4CAF50; /* ສີຂຽວສຳລັບລິ້ງ */
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #4CAF50; /* Primary green */
+    background-color: #4CAF50; /* ສີຂຽວຫຼັກ */
     color: white;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -57,23 +57,22 @@ header .container {
     object-fit: cover;
 }
 
-/* Header Logo Text - Animation Added Here */
+/* Header Logo Text Animation - ເຮັດໃຫ້ເລື່ອນຈາກຊ້າຍຫາຂວາ */
 header .logo h1 {
     font-size: 1.8em;
     margin: 0;
     color: white;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden;     /* Hide text that goes beyond the container */
-    animation: slideIn 5s linear forwards; /* Apply the animation */
+    white-space: nowrap; /* ປ້ອງກັນບໍ່ໃຫ້ຂໍ້ຄວາມຂຶ້ນບັນທັດໃໝ່ */
+    overflow: hidden;     /* ເຊື່ອງຂໍ້ຄວາມທີ່ຢູ່ນອກຂອບ */
+    animation: slideIn 5s linear forwards; /* ໃຊ້ Animation ຊື່ 'slideIn' */
 }
 
-/* Keyframes for Header Text Animation */
 @keyframes slideIn {
     0% {
-        transform: translateX(-100%); /* Start off-screen to the left */
+        transform: translateX(-100%); /* ເລີ່ມຕົ້ນຢູ່ນອກຈໍທາງຊ້າຍ */
     }
     100% {
-        transform: translateX(0);      /* End at its normal position */
+        transform: translateX(0);      /* ສິ້ນສຸດຢູ່ຕຳແໜ່ງປົກກະຕິ */
     }
 }
 
@@ -92,38 +91,37 @@ nav .nav-links a {
     font-size: 1.05em;
     padding: 5px 0;
     transition: color 0.3s ease;
-    display: flex; /* For icon alignment */
+    display: flex; /* ສໍາລັບຈັດໄອຄອນ */
     align-items: center;
 }
 
 nav .nav-links a i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px; /* ໄລຍະຫ່າງລະຫວ່າງໄອຄອນກັບຂໍ້ຄວາມ */
 }
 
 nav .nav-links a:hover {
-    color: #c8e6c9; /* Lighter green on hover */
+    color: #c8e6c9; /* ສີຂຽວອ່ອນລົງເມື່ອເມົ້າໄປຊີ້ */
     text-decoration: none;
 }
 
-/* Blinking "ໜ້າຫຼັກ" Link - Animation Added Here */
-header nav .nav-links li:first-child a { /* Select the first li (ໜ້າຫຼັກ) */
-    animation: blink 1s infinite alternate; /* Apply the blink animation */
+/* Blinking "ໜ້າຫຼັກ" Link Animation - ເຮັດໃຫ້ກະພິບໆ */
+header nav .nav-links li:first-child a { /* ເລືອກລິ້ງ "ໜ້າຫຼັກ" (ອັນທຳອິດ) */
+    animation: blink 1s infinite alternate; /* ໃຊ້ Animation ຊື່ 'blink' */
 }
 
-/* Keyframes for Blinking Link Animation */
 @keyframes blink {
     0% {
-        opacity: 1; /* Fully visible */
+        opacity: 1; /* ເຫັນເຕັມທີ່ */
     }
     100% {
-        opacity: 0.5; /* Slightly faded */
+        opacity: 0.5; /* ເລືອນລາງລົງ */
     }
 }
 
 
 /* Burger Menu for Mobile */
 .burger-menu {
-    display: none; /* Hidden on desktop */
+    display: none; /* ເຊື່ອງໄວ້ໃນໜ້າຈໍໃຫຍ່ */
     cursor: pointer;
 }
 
@@ -142,7 +140,7 @@ header nav .nav-links li:first-child a { /* Select the first li (ໜ້າຫຼ
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex-grow: 1; /* Allows main content to expand */
+    flex-grow: 1; /* ໃຫ້ເນື້ອຫາຫຼັກຂະຫຍາຍເຕັມທີ່ */
 }
 
 .content-area h2 {
@@ -154,18 +152,52 @@ header nav .nav-links li:first-child a { /* Select the first li (ໜ້າຫຼ
     padding-bottom: 10px;
 }
 
+/* Hero Section (ສຳລັບໜ້າຫຼັກ) */
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.quick-links {
+    margin-top: 30px;
+}
+
+.quick-links .button {
+    background-color: #f44336; /* ສີແດງ ສຳລັບປຸ່ມດ່ວນ */
+}
+
+.quick-links .button:hover {
+    background-color: #d32f2f;
+}
+
 /* Image Gallery */
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between images */
+    gap: 20px; /* ໄລຍະຫ່າງລະຫວ່າງຮູບ */
     margin-top: 30px;
 }
 
 .image-gallery img {
     width: 100%;
-    max-width: 450px; /* Adjust as needed */
+    max-width: 450px; /* ປັບຂະໜາດຕາມຕ້ອງການ */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -180,7 +212,7 @@ header nav .nav-links li:first-child a { /* Select the first li (ໜ້າຫຼ
 .button {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #007bff; /* Blue for general buttons */
+    background-color: #007bff; /* ສີຟ້າສຳລັບປຸ່ມທົ່ວໄປ */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -261,13 +293,13 @@ footer .social-media a:hover {
 }
 
 .correct {
-    background-color: #8bc34a !important; /* Light green */
+    background-color: #8bc34a !important; /* ສີຂຽວອ່ອນ */
     color: white;
     font-weight: bold;
 }
 
 .incorrect {
-    background-color: #ef5350 !important; /* Light red */
+    background-color: #ef5350 !important; /* ສີແດງອ່ອນ */
     color: white;
     font-weight: bold;
 }
@@ -321,7 +353,7 @@ footer .social-media a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    font-family: 'Noto Sans Lao', sans-serif; /* Ensure Lao font */
+    font-family: 'Noto Sans Lao', sans-serif; /* ໃຫ້ແນ່ໃຈວ່າໃຊ້ Font Lao */
 }
 
 .contact-form input[type="text"]:focus,
@@ -333,8 +365,8 @@ footer .social-media a:hover {
 }
 
 .contact-form button.button {
-    align-self: flex-start; /* Align button to left */
-    background-color: #4CAF50; /* Green submit button */
+    align-self: flex-start; /* ຈັດປຸ່ມໄປທາງຊ້າຍ */
+    background-color: #4CAF50; /* ສີຂຽວສຳລັບປຸ່ມສົ່ງ */
 }
 
 .contact-form button.button:hover {
@@ -357,12 +389,12 @@ footer .social-media a:hover {
     nav .nav-links {
         flex-direction: column;
         width: 100%;
-        display: none; /* Hidden by default on mobile */
+        display: none; /* ເຊື່ອງໄວ້ຕາມຄ່າເລີ່ມຕົ້ນໃນມືຖື */
         text-align: center;
     }
 
     nav .nav-links.active {
-        display: flex;
+        display: flex; /* ສະແດງເມື່ອເມນູບໍເກີຖືກຄລິກ */
     }
 
     nav .nav-links li {
@@ -370,7 +402,7 @@ footer .social-media a:hover {
     }
 
     .burger-menu {
-        display: block; /* Show burger on mobile */
+        display: block; /* ສະແດງເມນູບໍເກີໃນມືຖື */
         position: absolute;
         right: 20px;
         top: 25px;
@@ -401,375 +433,4 @@ footer .social-media a:hover {
 
 .burger-menu.active .bar3 {
     transform: translateY(-8px) rotate(-45deg);
-        }
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.contact-form label {
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #555;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Noto Sans Lao', sans-serif; /* Ensure Lao font */
-}
-
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-    border-color: #4CAF50;
-    outline: none;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
-}
-
-.contact-form button.button {
-    align-self: flex-start; /* Align button to left */
-    background-color: #4CAF50; /* Green submit button */
-}
-
-.contact-form button.button:hover {
-    background-color: #45a049;
-}
-/* General & Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Noto Sans Lao', sans-serif;
-    background-color: #f0f2f5; /* Light grey background */
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-a {
-    color: #4CAF50; /* Green link color */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Header */
-header {
-    background-color: #4CAF50; /* Primary green */
-    color: white;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
-}
-
-.logo h1 {
-    font-size: 1.8em;
-    margin: 0;
-    color: white; /* Ensure title is white */
-}
-
-nav .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-nav .nav-links li {
-    margin-left: 25px;
-}
-
-nav .nav-links a {
-    color: white;
-    font-weight: bold;
-    font-size: 1.05em;
-    padding: 5px 0;
-    transition: color 0.3s ease;
-    display: flex; /* For icon alignment */
-    align-items: center;
-}
-
-nav .nav-links a i {
-    margin-right: 8px; /* Space between icon and text */
-}
-
-nav .nav-links a:hover {
-    color: #c8e6c9; /* Lighter green on hover */
-    text-decoration: none;
-}
-
-/* Burger Menu for Mobile */
-.burger-menu {
-    display: none; /* Hidden on desktop */
-    cursor: pointer;
-}
-
-.burger-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Main Content Area */
-.content-area {
-    background-color: white;
-    padding: 30px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex-grow: 1; /* Allows main content to expand */
-}
-
-.content-area h2 {
-    color: #4CAF50;
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 2em;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-}
-
-/* Image Gallery */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between images */
-    margin-top: 30px;
-}
-
-.image-gallery img {
-    width: 100%;
-    max-width: 450px; /* Adjust as needed */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.image-gallery img:hover {
-    transform: scale(1.02);
-}
-
-/* Buttons */
-.button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #007bff; /* Blue for general buttons */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 15px 10px;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 40px;
-}
-
-footer .social-media a {
-    color: white;
-    font-size: 1.5em;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-footer .social-media a:hover {
-    color: #4CAF50;
-}
-
-/* Quiz Game Specific Styling */
-.game-container {
-    width: 90%;
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 25px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.game-container h2 {
-    color: #4CAF50;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-#question-text {
-    font-size: 1.4em;
-    margin-bottom: 30px;
-    color: #444;
-}
-
-#options-container button {
-    display: block;
-    width: 90%;
-    padding: 12px;
-    margin: 15px auto;
-    background-color: #e0e0e0;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-#options-container button:hover {
-    background-color: #d0d0d0;
-    transform: translateY(-2px);
-}
-
-#options-container button:active {
-    transform: translateY(0);
-}
-
-.correct {
-    background-color: #8bc34a !important; /* Light green */
-    color: white;
-    font-weight: bold;
-}
-
-.incorrect {
-    background-color: #ef5350 !important; /* Light red */
-    color: white;
-    font-weight: bold;
-}
-
-#next-button, #restart-button {
-    padding: 12px 30px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 30px;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-}
-
-#next-button:hover, #restart-button:hover {
-    background-color: #45a049;
-}
-
-#result-box {
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: #444;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
     }
-
-    nav {
-        width: 100%;
-        margin-top: 15px;
-    }
-
-    nav .nav-links {
-        flex-direction: column;
-        width: 100%;
-        display: none; /* Hidden by default on mobile */
-        text-align: center;
-    }
-
-    nav .nav-links.active {
-        display: flex;
-    }
-
-    nav .nav-links li {
-        margin: 10px 0;
-    }
-
-    .burger-menu {
-        display: block; /* Show burger on mobile */
-        position: absolute;
-        right: 20px;
-        top: 25px;
-    }
-
-    .content-area {
-        padding: 20px;
-    }
-
-    .image-gallery img {
-        max-width: 100%;
-    }
-
-    .game-container {
-        width: 95%;
-        padding: 15px;
-    }
-}
-
-/* Burger menu animation */
-.burger-menu.active .bar1 {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.burger-menu.active .bar2 {
-    opacity: 0;
-}
-
-.burger-menu.active .bar3 {
-    transform: translateY(-8px) rotate(-45deg);
-}
